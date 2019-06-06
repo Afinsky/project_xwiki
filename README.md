@@ -28,3 +28,23 @@ docker run --rm -it -v $(pwd):/ansible/playbooks \
 
 ## Jenkinsfile stores pipe description for local Jenkins machine
 
+Clone repo with Jenkinsfile ->
+
+Play Jenkinsfile on node (slave-machine):
+
+-> Clone full repo master branch  ->
+
+-> Build image from ansible version 2.7.10 from Dockerfile ->
+
+-> Create container with ansible ->
+
+-> Run playbook on stage-mashine ->
+
+-> Approve if you want run playbook on prod-mashine ->
+
+[if okay] 
+-> Run playbook on prod-mashine ->
+
+-> Remove container with ansible ->
+
+-> Job Status Notification in Slack
